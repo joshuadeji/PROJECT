@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="spotify2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- caveat -->
+    <div class="alert alert-primary fixed-top caveat-alert" role="alert">
+        <strong>CAVEAT</strong> This is a student's project and not an attempt to clone the existing webpage!
+    </div>
+
+    <!-- red navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-primary fixed-top red-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" style="background: rgb(58, 61, 58);">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link joshua" href="#">Spotify</a></li>
+                    <li class="nav-item"><a class="nav-link joshua" href="#">Product Hunt</a></li>
+                    <li class="nav-item"><a class="nav-link joshua" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link joshua" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link joshua" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- spotify navbar -->
+    <header class="spotify-navbar">
+        <div class="nav-left">
+            <img src="spotifylogo-removebg-preview.png.png" alt="Spotify" class="logo" />
+            <i class="fa-solid fa-house"></i>
+        </div>
+
+        <div class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="What do you want to play?" />
+            <i class="fa-solid fa-folder-open"></i>
+        </div>
+
+        <div class="nav-right">
+            <strong><a href="#">Premium</a></strong>
+            <strong><a href="#">Support</a></strong>
+            <strong><a href="#">Download</a></strong>
+            <span class="whiteline"></span>
+            <strong><a href="#">Install App</a></strong>
+            <strong><a href="#">Sign up</a></strong>
+            <strong><button class="login-btn">Log in</button></strong>
+        </div>
+    </header>
+
+    <!-- Spotify main layout -->
+    <div class="spotify-layout">
+
+        <!-- Sidebar -->
+        <div class="spotify-container">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="library-header">
+                    <span class="library-title">Your <span class="highlight">Library</span></span>
+                    <span class="plus-icon">+</span>
+                </div>
+
+                <div class="scroll">
+                    <div class="sidebar-section">
+                        <h3>Create your first playlist</h3>
+                        <p>It's easy, we'll help you</p>
+                        <button class="create-btn">Create playlist</button>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Let's find some podcasts to follow</h3>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button class="create-btn">Browse podcasts</button>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety &amp; Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                    <button class="lang-btn"><i class="fa-thin fa-globe"></i> English</button>
+                </div>
+            </aside>
+
+            
+            <!-- main content -->
+            <main class="main-content">
+                <!-- Section 1 -->
+                <section class="music-section">
+                    <h2>Trending Songs</h2>
+                    <div class="music-row">
+                        <div class="music-card">
+                            <img src="ayra.jpeg.jpeg" alt="Ayra Starr" />
+                            <p class="title">Who's Dat Girl</p>
+                            <p class="artist">Ayra Starr, Rema</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="no excuses.jpeg.jpeg" alt="Blaqbonez" />
+                            <p class="title">ACL</p>
+                            <p class="artist">Blaqbonez</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="fuji.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="dopamine.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="shoday.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="symbol of hope.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="lonely road.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="i am a mess.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section><br/><br/><br/>
+
+                <section class="music-section popular-artists">
+                    <h2>Popular Artists</h2>
+                    <div class="music-row">
+                        <div class="music-card">
+                            <img src="ayra.jpeg.jpeg" alt="Ayra Starr" />
+                            <p class="title">Who's Dat Girl</p>
+                            <p class="artist">Ayra Starr, Rema</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="no excuses.jpeg.jpeg" alt="Blaqbonez" />
+                            <p class="title">ACL</p>
+                            <p class="artist">Blaqbonez</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section><br/><br/><br/>
+
+                <!-- third part -->
+                <section class="music-section">
+                    <h2>Popular albums and singles</h2>
+                    <div class="music-row">
+                        <div class="music-card">
+                            <img src="ayra.jpeg.jpeg" alt="Ayra Starr" />
+                            <p class="title">Who's Dat Girl</p>
+                            <p class="artist">Ayra Starr, Rema</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="no excuses.jpeg.jpeg" alt="Blaqbonez" />
+                            <p class="title">ACL</p>
+                            <p class="artist">Blaqbonez</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section><br/><br/><br/>
+
+                <!-- fourth part -->
+                <section class="music-section">
+                    <h2>Popular Radio</h2>
+                    <div class="music-row">
+                        <div class="music-card">
+                            <img src="ayra.jpeg.jpeg" alt="Ayra Starr" />
+                            <p class="title">Who's Dat Girl</p>
+                            <p class="artist">Ayra Starr, Rema</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="no excuses.jpeg.jpeg" alt="Blaqbonez" />
+                            <p class="title">ACL</p>
+                            <p class="artist">Blaqbonez</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section><br/><br/><br/>
+
+                <!-- fifth part -->
+                <section class="music-section">
+                    <h2>Featured Charts</h2>
+                    <div class="music-row">
+                        <div class="music-card">
+                            <img src="ayra.jpeg.jpeg" alt="Ayra Starr" />
+                            <p class="title">Who's Dat Girl</p>
+                            <p class="artist">Ayra Starr, Rema</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="no excuses.jpeg.jpeg" alt="Blaqbonez" />
+                            <p class="title">ACL</p>
+                            <p class="artist">Blaqbonez</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="music-card">
+                            <img src="20 10 20.jpeg.jpeg" alt="Burna Boy" />
+                            <p class="title">20 10 20</p>
+                            <p class="artist">Burna Boy</p>
+                            <div class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section><br/><br/><br/>
+
+                <footer class="spotify-footer">
+                    <div class="footer-container">
+                        <div class="footer-links">
+                            <div class="footer-column">
+                                <h4>Company</h4>
+                                <a href="#">About</a>
+                                <a href="#">Jobs</a>
+                                <a href="#">For the Record</a>
+                            </div>
+
+                            <div class="footer-column">
+                                <h4>Communities</h4>
+                                <a href="#">For Artists</a>
+                                <a href="#">Developers</a>
+                                <a href="#">Advertising</a>
+                                <a href="#">Investors</a>
+                                <a href="#">Vendors</a>
+                            </div>
+
+                            <div class="footer-column">
+                                <h4>Useful links</h4>
+                                <a href="#">Support</a>
+                                <a href="#">Free Mobile App</a>
+                                <a href="#">Popular by Country</a>
+                                <a href="#">Import your music</a>
+                            </div>
+
+                            <div class="footer-column">
+                                <h4>Spotify Plans</h4>
+                                <a href="#">Premium Individual</a>
+                                <a href="#">Premium Duo</a>
+                                <a href="#">Premium Family</a>
+                                <a href="#">Premium Student</a>
+                                <a href="#">Spotify Free</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-socials">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>© 2025 Spotify AB</p>
+                    </div>
+                </footer>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
