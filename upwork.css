@@ -1,0 +1,174 @@
+    .joshua:hover {
+        color: rgb(0, 0, 0);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+    }
+
+    /* General Layout */
+    body {
+        margin: 0;
+        background-color: #f9f9f9;
+    }
+
+    .wholeweb {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px 40px;
+        background: white;
+    }
+
+    .headerlogo {
+        color: black;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .login-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .login-card {
+        background: white;
+        padding: 40px;
+        border: 1px solid #d5e0d5;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .login-card h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .input-group i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #5e6d55;
+    }
+
+    .user {
+        width: 100%;
+        padding: 12px 12px 12px 40px;
+        border: 1px solid #d5e0d5;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .continue-btn {
+        background-color: #14a800;
+        color: white;
+    }
+
+    .continue-btn:hover {
+        background-color: #108a00;
+    }
+
+    .googlebtn {
+        background-color: #4285f4;
+        color: white;
+        padding: 2px 2px 2px 12px;
+    }
+
+    .google-icon-wrapper {
+        background: black;
+        padding: 8px;
+        border-radius: 4px;
+        display: flex;
+    }
+
+    .signupspace {
+        padding-bottom: 30px;
+    }
+
+    .applebtn {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    .divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+        color: #5e6d55;
+        padding-left: 180px;
+    }
+
+    .signup-section {
+        margin-top: 60px;
+        border-top: 1px solid #d5e0d5;
+        padding-top: 30px;
+    }
+
+    .signup-section p {
+        color: #5e6d55;
+        margin-bottom: 20px;
+    }
+
+    .signup-btn {
+        background: white;
+        border: 1px solid #14a800;
+        color: #14a800;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        width: 200px;
+    }
+
+    .signpadding {
+        padding-left: 80px;
+    }
+
+    .black-footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin: 5px;
+        border-radius: 6px;
+    }
+
+    .footclass a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+    .footclass a:hover {
+        text-decoration: underline;
+    }
